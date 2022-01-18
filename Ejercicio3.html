@@ -32,7 +32,8 @@
         document.write('Los aprobados son: <br><br>')
         for (var i = 0; i < aprobados.length; i ++) {
             var objeto = aprobados[i].nombre;
-            document.write(objeto + '<br>');
+            var objeto2 = aprobados[i].nota;
+            document.write(objeto + 'con -> '+ objeto2 + '<br>');
         }
     </script>
 </body>
