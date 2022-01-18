@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 1</title>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body id="fondo">
+    <div class="holder">
+        <div id="holder1">
+            Boton1 
+        </div>
+        <div id="holder2">
+            Boton2
+        </div>
+        <div id="holder3">
+            Boton3
+        </div>
+    </div>
+
+    <script>
+        var boton1 = document.getElementById('holder1');
+        var boton2 = document.getElementById('holder2');
+        var boton3 = document.getElementById('holder3');
+        var fondo = document.getElementById('fondo');
+
+        boton1.addEventListener('click', function(){
+            fondo.style.backgroundColor = 'red'
+            boton1.style.backgroundColor = 'white'
+            boton2.style.backgroundColor = 'green'
+            boton3.style.backgroundColor = 'blue'
+            boton1.style.color = 'black'
+            boton2.style.color = 'white'
+            boton3.style.color = 'white'
+        })
+
+        boton2.addEventListener('click', function(){
+            fondo.style.backgroundColor = 'green'
+            boton2.style.backgroundColor = 'white'
+            boton1.style.backgroundColor = 'red'
+            boton3.style.backgroundColor = 'blue'
+            boton2.style.color = 'black'
+            boton3.style.color = 'white'
+            boton1.style.color = 'white'
+        })
+
+        boton3.addEventListener('click', function(){
+            fondo.style.backgroundColor = 'blue'
+            boton3.style.backgroundColor = 'white'
+            boton2.style.backgroundColor = 'green'
+            boton1.style.backgroundColor = 'red'
+            boton3.style.color = 'black'
+            boton2.style.color = 'white'
+            boton1.style.color = 'white'
+        })
+
+    </script>
+</body>
+</html>
